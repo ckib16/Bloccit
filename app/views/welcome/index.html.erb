@@ -1,2 +1,22 @@
-<h1>Welcome to Bloccit</h1>
-<p>This is the home page for my app: Bloccit.</p>
+<br/>
+<div class="jumbotron">
+  <h1>Bloccit</h1>
+  <p>Bloccit is an app for sharing links with others.</p>
+  <p>
+    <%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary' %>
+    <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %>
+  </p>
+</div>
+
+<div class="row">
+  <div class="col-md-8">
+    <h2>Helping me learn rails</h2>
+    <p>Bloccit is teaching me how to make a production-quality app.</p>
+  </div>
+
+  <div class="col-md-8">
+    <h2>Showing what I can build</h2>
+    <p>Bloccit is an example of the full-scale apps I can create for your team.</p>
+  </div>
+
+</div>

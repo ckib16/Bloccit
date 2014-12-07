@@ -16,3 +16,9 @@
 /tmp
 
 .rvmrc
+
+# Ignore application configuration
+/config/application.yml
+
+#ME: Ignore secrets file
+/config/secrets.yml
