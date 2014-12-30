@@ -18,15 +18,12 @@
     <% end %>
   </div>
 
-  <!-- ME: added for Lesson 40 to show comments-->
-
   <div class='col-md-8'>
     <h2>Comments</h2>
     <div class='col-mod-4'>
       <%= render @comments %>
     </div>
      
-    <h2>Add a comment:</h2>
     <div class='col-mod-4'>
       <%= render 'comments/form', topic: @topic, post: @post, comment: Comment.new %>
     </div>
