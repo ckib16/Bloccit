@@ -15,7 +15,7 @@
     <h2>Add a comment:</h2>
 
     <%= form_group_tag(comment.errors[:body]) do %>
-      <%= f.label :comment %>
+      <%= f.label :body, "Comment" %>
       <%= f.text_field :body, rows: 8, class: 'form-control', placeholder: "Enter comment body" %>
     <% end %>
 
