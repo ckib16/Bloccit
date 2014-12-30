@@ -38,6 +38,12 @@ class ApplicationPolicy
     record.class
   end
 
+  private
+
+  def can_moderate?
+    user.present? && (record.user == user || user.admin? || user.moderator?)
+  end
+
   class Scope
     attr_reader :user, :scope
 
@@ -50,5 +56,6 @@ class ApplicationPolicy
       scope
     end
   end
+
 end
 
