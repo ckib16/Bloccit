@@ -55,7 +55,7 @@ admin.save!
 
 #Create a moderator
 moderator = User.new(
-  name:         'Moderatpr User',
+  name:         'Moderator User',
   email:        'moderator@example.com',
   password:     'helloworld',
   role:         'moderator'
