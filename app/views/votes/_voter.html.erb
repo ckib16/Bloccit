@@ -1,7 +1,7 @@
 <% if policy(Vote.new).create? %>  
   <div class='pull-left vote-arrows'>
-    <div> <%= link_to " ", post_up_vote_path(post), class: 'btn btn-success', method: :post %> </div>
+    <div> <%= link_to "x", post_up_vote_path(post), class: 'glyphicon glyphicon-cheveron-up', method: :post %> </div>
     <div><strong> <%= post.points %>  </strong></div>
-    <div> <%= link_to " ", post_down_vote_path(post), class: 'btn btn-danger', method: :post %> </div>
+    <div> <%= link_to "x", post_down_vote_path(post), class: 'glyphicon glyphicon-cheveron-down', method: :post %> </div>
   </div>
 <% end %>
