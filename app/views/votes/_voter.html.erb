@@ -3,8 +3,7 @@
     <div> 
       <%= link_to "x",
       post_up_vote_path(post), 
-      class: "glyphicon glyphicon-cheveron-up #{(current_user.voted(post) && current_user.voted(post).up_vote?) ? 'voted' : '' }",
-      method: :post %> 
+      class: up_vote_link_classes(post), method: :post %> 
     </div>
     
     <div>
@@ -14,8 +13,7 @@
     <div> 
       <%= link_to "x",
       post_down_vote_path(post), 
-      class: "glyphicon glyphicon-cheveron-down #{(current_user.voted(post) && current_user.voted(post).down_vote?) ? 'voted' : '' }",
-      method: :post %> 
+      class: down_vote_link_classes(post), method: :post %> 
     </div>
   </div>
-<% end %>
+<% end %> 
