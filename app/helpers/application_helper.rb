@@ -21,4 +21,13 @@ module ApplicationHelper
     redcarpet = Redcarpet::Markdown.new(renderer, extensions)
     (redcarpet.render text).html_safe
   end
+
+  def up_vote_link_classes(argument)
+
+  end
+
+  def down_vote_link_classes(argument)
+    
+  end
+
 end
