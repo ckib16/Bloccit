@@ -28,6 +28,8 @@ class Post < ActiveRecord::Base
 
   default_scope { order('rank DESC') }
 
+  scope :visible_to, -> (user) { user ? all : joins(:topic).where('topics.public' => true) }
+
   #scope :ordered_by_title, -> { order(title: :asc) } # Post.ordered_by_title
 
   validates :title, length: { minimum: 5}, presence: true
