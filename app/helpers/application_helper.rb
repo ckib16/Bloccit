@@ -32,7 +32,7 @@ module ApplicationHelper
   end
 
   def down_vote_link_classes(post)
-    class_start = "glyphicon glyphicon-cheveron-down "
+    class_start = "glyphicon glyphicon-chevron-down "
     if current_user.voted(post) && current_user.voted(post).down_vote?
       class_start + 'voted'
     else

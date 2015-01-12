@@ -2,6 +2,11 @@
 <html>
   <head>
     <title>Bloccit</title>
+
+      <!-- Added as fix to bootstrap sprokets -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+      <!-- End added code -->
+
       <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
       <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
@@ -55,6 +60,10 @@
 
    <%= yield %>
   </div>
+
+  <!-- Added as fix to bootstrap sprokets -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <!-- End added code -->
 
   </body>
 </html>
