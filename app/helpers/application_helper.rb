@@ -23,21 +23,17 @@ module ApplicationHelper
   end
 
   def up_vote_link_classes(post)
-    class_start = "glyphicon glyphicon-chevron-up "
-    if current_user.voted(post) && current_user.voted(post).up_vote?
-      class_start + 'voted'
-    else
-      class_start + ''
-    end
+    base = "glyphicon glyphicon-chevron-up "
+    vote = current_user.voted(post)
+    base += "voted" if vote && vote.up_vote?
+    base 
   end
 
   def down_vote_link_classes(post)
-    class_start = "glyphicon glyphicon-chevron-down "
-    if current_user.voted(post) && current_user.voted(post).down_vote?
-      class_start + 'voted'
-    else
-      class_start + ''
-    end
+    base = "glyphicon glyphicon-chevron-down "
+    vote = current_user.voted(post)
+    base += "voted" if vote && vote.down_vote?
+    base
   end
 
 end
