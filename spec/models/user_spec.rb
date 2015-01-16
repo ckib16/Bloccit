@@ -2,18 +2,16 @@ require 'rails_helper'
 
 describe User do
 
-  include TestFactories
-
   describe "#favorited(post)" do
     
     before do
-      @post = associated_post
-      @user = authenticated_user
+      @user = create(:user)
+      @post = create(:post, user: @user)
     end
 
     it "returns 'nil' if the user has not favorited the post" do
       @user.favorites
-      #Use a new user from #authenticated_user that has no favorites. Should return `nil`
+      #Use a new user from FactoryGirl#user that has no favorites. Should return `nil`
 
     end
 
