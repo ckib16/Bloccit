@@ -3,17 +3,18 @@
 
 
 
-# Bloccit
+# NewsFlow
 
-Bloccit is a Reddit clone used to teach me the fundamentals of web development and Rails 4.
+NewsFlow is a Reddit clone used to teach me the fundamentals of web development and Rails 4.
 
 ## Installation
 
-Please see Bloccit in action on Heroku: [bloccit-ckib16](https://bloccit-ckib16.herokuapp.com/)
+Please see NewsFlow in action on Heroku: [newsflow
+-ckib16](https://NewsFlow-ckib16.herokuapp.com/)
 
 ## Usage
 
-Bloccit works just like Reddit. You can load up your new favorite web clip. Vote on the most popular links. And favorite your faves for a higher ranking.
+NewsFlow works just like Reddit. You can load up your new favorite web clip. Vote on the most popular links. And favorite your faves for a higher ranking.
 
 ## Contributing
 
