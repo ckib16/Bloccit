@@ -58,6 +58,7 @@ gem 'will_paginate', '~> 3.0.5'
 # gem 'binding_of_caller'
 # gem 'better_errors'
 gem 'web-console', '~> 2.0'
+gem 'rails-erd'
 
 group :test do
   gem 'rspec-rails', '~> 3.1.0'
